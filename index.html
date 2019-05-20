@@ -4,30 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>멋쟁이 사자처럼</title>
+    <title>멋쟁이 사자처럼 (조재철)</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script
+  src="http://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
 </head>
 <body>
+<div class="container">
+  <br>
+  <ul class="nav nav-pills">
+      <li role="presentation" class="active"><a href="#login">로그인</a></li>
+      <li role="presentation"><a href="#diary">일기장</a></li>
+    </ul>
  <hr><hr>
- <h1>가나다라마바사</h1>
+ <h1>조재철</h1>
+ <P style="color:red;">E-mail : rhsnqk@daum.net</P>
  <hr> <hr>
- <img src="사진.jpg" height="300">
+ <img src="사진.jpg" height="300" width="300">
+ <p>처음 만들어보는 웹사이트 입니다.<br>
+    부족하지만 재미있게 봐주세요.</p><br>
+    <h2 id="login"></h2>
+    <form action="전송받을 대상">
+        아이디 : <input type="text" name="id">
+        암호 : <input type="password" name="pwd">
+      <div class="form-group">
+        <label for="exampleInputEmail1">이메일 주소</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="이메일을 입력하세요">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">암호</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="암호">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputFile">파일 업로드</label>
+        <input type="file" id="exampleInputFile">
+        <p class="help-block">여기에 블록레벨 도움말 예제</p>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> 입력을 기억합니다
+        </label>
+      </div>
+      <input type="submit" class="btn btn-primary"></input>
+    </form>    
+
  <hr><hr>
- <h2>저의 취미는 축구입니다.</h2>
- <br>
- <h3></h3>
+ <h2>나의 소개</h2>
+ <p>저는 이제 막 코딩을 배우기 시작한 코딩 새내기 입니다.<br>
+앞으로 더 열심히 공부하고 멋쟁이 사자처럼을 통해 많은 것을 배워 더 나은 코딩 실력을 가지고 싶습니다.</p>
+
  <hr><hr>
- <h1>좋아하는 음식 순위는</h1>
+ <h3>사용할 줄 아는 언어</h3>
  <ol>
-     <li>치킨</li>
-     <li>피자</li>
-     <li>콜라</li>
+     <li>C</li>
+     <li>Python</li>
+     <li>앞으로 더 배울 것</li>
  </ol>
  <hr><hr>
- <h1>저는 분자생물학과 입니다.</h1>
- 저의 과의 홈페이지는 <a href="https://molbiology.pusan.ac.kr/molbiology/index.do">링크 태그</a>  
+ <h3>저의 전공은 분자생물학과 입니다.</h3>
+ 저의 과의 홈페이지는 <a href="https://molbiology.pusan.ac.kr/molbiology/index.do">이곳을 눌려주세요.</a>  
 
+ <h2 id="diary"></h2>
+ <form action="전송받을 대상">
+   <h2>일 기 장</h2>
+   제목 : <input type="text" name="diarytitle"><br>
+   <select>
+     <option value="sunny">맑음</option>
+     <option value="cloudy">흐림</option>
+     <option value="rainy">비</option>
+   </select><br>
+   내용 : <br>
+   <textarea cols="30" rows="20"></textarea>
+  <br>
+  <input type="submit"
+ </form>
  
- 
-
+   
+</div>
 </body>
 </html>
